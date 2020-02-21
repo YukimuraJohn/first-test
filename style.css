@@ -1,0 +1,178 @@
+/* 
+ALL Global
+*/
+
+*{ 
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;     
+    /* FONTE */
+    font-family: 'Roboto', sans-serif;
+    
+    background-color: #f9f9f9;
+}
+
+h1 , h2 {
+    color:#e23761d5;
+}
+
+/* Titles  */ 
+
+header h1, main h2 {
+    margin-bottom: 40px;
+}
+
+
+main h2 span {
+    color: #ff88ff;
+}
+
+.form h2 {
+    text-align:left ;
+    color: #eee;
+    font-size: 16px;
+}
+
+/* ESTRUTURA */
+
+/* ALINHAMENTOS , ESPAÇAMENTOS 
+LARGURAS E ALTURAS */
+header, main, footer { 
+    text-align: center; 
+}
+
+
+header, .form , main { 
+    /*espaçamentos com margin*/ 
+    /*top , left , bottom , right */
+     margin: 0 auto 70px; 
+    
+    /* limites dos elementos na página */
+    width: 80%;
+    max-width: 500px;
+}
+
+/*HEADER*/
+header button {
+    margin-top: 16px ;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+
+    background-color: #ff4f4f;
+    color: white ;
+
+    font-weight: bold;
+}
+.logo {
+    width: 325px;
+    height: 325px;
+    margin: 40px 0;
+}
+
+/* FORM */
+
+section.form {
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    align-items: center; 
+
+    background-color: #ff4f4f;
+    padding: 16px 64px;
+    border-radius: 6px;
+}
+
+form input, form button {
+    width: 100%;
+
+    margin-bottom: 4px;
+
+    padding:8px 12px;
+
+    border-radius: 4px 5px;
+    border: 1px #eaaeee solid; 
+    
+}
+
+form input {
+    background-color: transparent;
+}
+
+form input::placeholder {
+    color: #ffffffaa; 
+}
+
+form button { 
+    font-weight: bold;
+}
+
+/* MAIN */
+
+main .Animes { display:grid ;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Anime {
+    font-family: cursive;
+    font-size: 18px;
+    color: rgba(106, 108, 150, 0.959) ;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Anime::before {
+    content: "";
+    background-color: #e1b2ec99;
+
+    width:185px;
+    height: 40px;
+    
+    position: absolute;
+    
+    border-radius: 50%;
+}
+
+main button {
+    width: 55%;
+    height: 55%;
+    margin: 10px 14px ;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px 14px;
+    border-radius: 6px 8px;   
+    border:1px purple solid ; 
+    font-size: 12px;
+    background-color: lightsteelblue;
+    color: #9b1685fa ;
+}
+
+footer {
+    margin-top: auto;
+    padding: 16px;
+    border: 1px solid #eaaeee
+}
+
+/* Funcionalidades com Javascript*/
+    
+section.form {
+    transition: all 300ms;
+}
+
+section.form.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--HTML
+    
+    HYPERTEXT
+    texto que contém links para outros documentos.
+
+    MARKUP
+    texto conterá marcações
+    <tags>
+
+    LANGUAGE
+    para me comunicar de certa maneira. Sintaxe específica para escrita.
+
+-->
+<html>
+
+<head>
+    <!--configurações da minha página--> 
+    <title>Enquete dos Animes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--Aqui vem todo o conteúdo visível para o usuário, dentro de certa página-->
+        <img 
+        class="logo"
+        src="logo anime.jpg" 
+        alt="Imgem de Anime">
+        <h2>Participe da votação</h2>
+        <p>Escolha o anime que mais te agradou e vote nele</p>
+        <p>Sua votação é de extrema importância a todos nós</p>
+        <p>Acompanhe nossas redes sociais e fique por dentro do resultado parcial e de novidades</p>
+        <p>Para participar da nossa enquete é muito fácil, basta preencher o formulário abaixo com seu nickname , seu e-mail e seu anime favorito</p>
+        <button> começe a votar agora mesmo </button>
+    </header>
+
+    <section class="form hide">
+        <h2>Entre na lista de participantes</h2>
+        <form action="/">
+            <input type="text" name="apelido" placeholder="Nickname"
+            >
+            <input type="text" name="email" placeholder="Email"
+            >
+            <input type="text" name="Anime" placeholder="Anime Favorito"
+            >
+            <button>Quero votar</button>
+        </form>
+    </section>
+
+    <main>
+        <h2>Ultimos <span>Animes</span> em alta</h2>
+
+        <section class="Animes">
+            <h2>
+                <div class="Anime">Científico</div>
+            </h2>
+            <button>
+                Dr. Stone
+            </button>
+            <h2>
+                <div class="Anime">Aventura</div>
+            </h2>
+            <button>Granblue Fantasy </button>
+            <h2>
+                <div class="Anime">Comédia Romântica</div>
+            </h2>
+            <button>Science fall in love</button>
+            <h2>
+                <div class="Anime">Luta</div>
+            </h2>
+           
+            <button>Boku no hero</button>
+        
+        </section>
+
+    </main>
+
+    <footer> Nós agradecemos a sua visita em nosso website, Um grande abraço! </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+
+</html>
